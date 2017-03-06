@@ -4,7 +4,7 @@
 {% block body %}
     {{ subpage_text }}
     
-    {% if values %}
+    {% if values and values.val1 %}
         <br><br>here's some values:<br>
         v1: {{ values.val1 }}<br>
         v2: {{ values.val2 }}<br>
