@@ -51,6 +51,7 @@ Temporary Items
 # Simple MVC
 # =========================
 
+.gitattributes
 composer.lock
 
 nbproject/
