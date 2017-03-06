@@ -1,6 +1,9 @@
 # Simple MVC
 
-This is a simple MVC application.
+This is a simple MVC application that uses:
+
+* [Composer](https://getcomposer.org/) for autoloading
+* [Twig](http://twig.sensiolabs.org/) for templating
 
 ## Requirements
 
