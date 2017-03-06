@@ -10,9 +10,15 @@ class App
      * Method based on MINI: https://github.com/panique/mini
      *
      * Issue #1: index site (BundleNameController->index()) can't take arguments (they are considered a subsite every time)
+     *
+     * @throws \Exception When PHP version is lower than 7.0.0
      */
     function __construct()
     {
+        if (PHP_VERSION_ID < 70000) {
+            throw new \Exception('This application requires PHP version 7.0.0 or higher to work');
+        }
+
         // Split up the URL
         $this->splitURL();
 
