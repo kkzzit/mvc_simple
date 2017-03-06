@@ -7,6 +7,12 @@ class Template
     private $template;
     private $parameters;
 
+    /**
+     * Create a template
+     *
+     * @param string $template Template file
+     * @param array $parameters Template parameters
+     */
     public function __construct($template, array $parameters = [])
     {
         $twig = new TwigTemplating();
@@ -16,6 +22,11 @@ class Template
         $this->parameters = $parameters;
     }
 
+    /**
+     * Renders a template
+     *
+     * @return Rendered template
+     */
     public function render()
     {
         return $this->twig->display($this->template, $this->parameters);

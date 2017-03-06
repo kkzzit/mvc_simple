@@ -5,6 +5,9 @@ class TwigTemplating
 {
     private $twig;
 
+    /**
+     * Load twig
+     */
     public function __construct()
     {
         $loader = new \Twig_Loader_Filesystem(DIR_VIEWS);
@@ -16,6 +19,11 @@ class TwigTemplating
         ]);
     }
 
+    /**
+     * Get Twig object
+     *
+     * @return Twig_Environment
+     */
     public function get()
     {
         return $this->twig;

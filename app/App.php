@@ -9,7 +9,7 @@ class App
      * Main application constructor
      * Method based on MINI: https://github.com/panique/mini
      *
-     * issue #1: index site (BundleNameController->index()) can't take arguments (they are considered a subsite every time)
+     * Issue #1: index site (BundleNameController->index()) can't take arguments (they are considered a subsite every time)
      */
     function __construct()
     {
@@ -54,7 +54,11 @@ class App
         }
     }
 
-
+    /**
+     * Controller not found error page
+     *
+     * For now just a simple error message
+     */
     protected function errorPage()
     {
         print 'invalid path';

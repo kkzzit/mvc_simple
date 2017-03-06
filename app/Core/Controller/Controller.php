@@ -11,6 +11,9 @@ abstract class Controller
 {
     private $request;
 
+    /*
+     * Create a new Request when a Controller is created
+     */
     public function __construct()
     {
         $this->request = new Request();
@@ -18,6 +21,11 @@ abstract class Controller
 
     /**
      * Render a template using the Template class
+     *
+     * @param string $template Template file
+     * @param array $parameters Template parameters
+     * @return Rendered template
+     * @throws \Exception When trying to render more than once
      */
     protected function render($template, array $parameters = [])
     {
