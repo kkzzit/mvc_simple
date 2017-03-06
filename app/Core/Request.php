@@ -11,7 +11,7 @@ class Request
     /**
      * Create the request object
      *
-     * @throws \Exception If REQUEST_METHOD is invalid
+     * @throws \Exception When REQUEST_METHOD is invalid
      */
     public function __construct()
     {

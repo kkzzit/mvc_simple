@@ -11,7 +11,7 @@ abstract class Controller
 {
     private $request;
 
-    /*
+    /**
      * Create a new Request when a Controller is created
      */
     public function __construct()
