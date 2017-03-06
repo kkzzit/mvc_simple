@@ -1,0 +1,19 @@
+{
+    "require": {
+        "php": ">=7.0.0",
+        "twig/twig": "~2.0"
+    },
+    
+    "autoload": {
+        "psr-4": {
+            "SimpleMVC\\" : "app/",
+            "App\\" : "src/"
+        },
+        "classmap": [
+            "app/App.php"
+        ],
+        "files": [
+            "config/config.php"
+        ]
+    }
+}

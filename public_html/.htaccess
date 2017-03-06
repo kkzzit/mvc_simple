@@ -1,0 +1,15 @@
+AddHandler application/x-httpd-php71 php
+
+Options -Indexes
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.+)$ index.php?page=$1 [QSA,L]
+
+<Files ~ "\.(pw|zip|sq|sql|psd|docx|bak|old)$">
+    order allow,deny
+    deny from all
+</Files>

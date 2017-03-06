@@ -1,0 +1,12 @@
+{# home/home.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ subpage_text }}
+    
+    {% if values %}
+        <br><br>here's some values:<br>
+        v1: {{ values.val1 }}<br>
+        v2: {{ values.val2 }}<br>
+    {% endif %}
+{% endblock %}

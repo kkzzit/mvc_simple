@@ -45,3 +45,13 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/nbproject/private/
+
+# =========================
+# Simple MVC
+# =========================
+
+composer.lock
+
+nbproject/
+vendor/
