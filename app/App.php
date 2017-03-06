@@ -49,6 +49,7 @@ class App
         if (isset($_GET['page'])) {
             $url = trim($_GET['page'], '/');
             $url = filter_var($url, FILTER_SANITIZE_URL);
+            $url = filter_var($url, FILTER_SANITIZE_SPECIAL_CHARS);
             $url = explode('/', $url);
 
             $this->url_controller = $url[0] ?? null;
