@@ -14,7 +14,7 @@ class TwigTemplating
         $this->twig = new \Twig_Environment($loader, [
             'debug' => DEV,
             'strict_variables' => DEV,
-            'autoescape' => false,
+            'autoescape' => true,
             'cache' => DIR_CACHE
         ]);
     }
