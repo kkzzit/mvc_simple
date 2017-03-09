@@ -1,4 +1,6 @@
 <?php
+use SimpleMVC\Component\Templating\Template;
+
 class App
 {
     private $url_controller = null;
@@ -68,6 +70,7 @@ class App
      */
     protected function errorPage()
     {
-        print 'invalid path';
+        $tpl = new Template('error.html.twig');
+        return $tpl->render();
     }
 }
