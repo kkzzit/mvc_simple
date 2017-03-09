@@ -1,4 +1,6 @@
 <?php
+use SimpleMVC\Component\Templating\Template;
+
 class App
 {
     private $url_controller = null;
@@ -62,12 +64,11 @@ class App
     }
 
     /**
-     * Controller not found error page
-     *
-     * For now just a simple error message
+     * Controller not found error page (creates a templated view directly)
      */
     protected function errorPage()
     {
-        print 'invalid path';
+        $tpl = new Template('error.html.twig');
+        return $tpl->render();
     }
 }
