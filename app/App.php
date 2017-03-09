@@ -64,9 +64,7 @@ class App
     }
 
     /**
-     * Controller not found error page
-     *
-     * For now just a simple error message
+     * Controller not found error page (creates a templated view directly)
      */
     protected function errorPage()
     {
