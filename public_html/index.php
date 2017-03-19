@@ -3,7 +3,8 @@
  *  Simple MVC
  *
  *  @author MN
- *  @created 2017-03-06
+ *  @copyright MN 2017-03-06
+ *  @version 1.0.0
  */
 
 define('DIR_ROOT', dirname(__DIR__) . DIRECTORY_SEPARATOR);
